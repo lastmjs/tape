@@ -47,7 +47,7 @@ exports = module.exports = (function () {
     function getHarness (opts) {
         if (!opts) opts = {};
         opts.autoclose = !canEmitExit;
-        if (!harness) harness = createExitHarness(opts);
+        harness = createExitHarness(opts);
         return harness;
     }
 })();
